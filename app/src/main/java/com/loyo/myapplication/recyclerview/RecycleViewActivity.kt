@@ -1,8 +1,10 @@
 package com.loyo.myapplication.recyclerview
 
 import android.os.Bundle
+import android.text.TextUtils
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.arch.core.util.Function
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
@@ -10,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.loyo.myapplication.R
 import kotlinx.android.synthetic.main.activity_recycle_view.*
+import javax.xml.transform.Source
 
 class RecycleViewActivity : AppCompatActivity() {
 
@@ -22,15 +25,6 @@ class RecycleViewActivity : AppCompatActivity() {
         recyclerview.addItemDecoration(object : RecyclerView.ItemDecoration() {
 
         })
-        val source: LiveData<String> = MutableLiveData("KAYLEE")
-        Log.i("日志source", source.value)
-
-        val result =Transformations.switchMap(source){
-            MutableLiveData("bbo")
-        }
-
-
-        Log.i("日志", result.value + "null")
         button2.setOnClickListener {
             recyclerViewAdapter.setData(arrayListOf("kaylee"))
 
