@@ -5,4 +5,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="recyclerview_refresh_item">androidx recycleView item局部更新</string>
     <string name="use_room">room使用</string>
+    <string name="snackbar">SnackBar的使用</string>
+    <string name="material_design">Material Design的学习</string>
 </resources>
