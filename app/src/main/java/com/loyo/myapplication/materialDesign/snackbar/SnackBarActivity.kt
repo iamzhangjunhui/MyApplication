@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.loyo.myapplication.R
+import com.loyo.myapplication.Util.RadomData
 import kotlinx.android.synthetic.main.activity_snack_bar.*
 
 class SnackBarActivity : AppCompatActivity() {
@@ -21,9 +22,9 @@ class SnackBarActivity : AppCompatActivity() {
             //Snackbar.LENGTH_INDEFINITE不会消失,需要和setAction配合使用,Snackbar.LENGTH_SHORT、Snackbar.LONG和Toast的相似
             Snackbar.LENGTH_INDEFINITE
         ).setTextColor(Color.RED).setBackgroundTint(Color.YELLOW).setActionTextColor(Color.BLUE)
-            .setAction(
-                "点击",
-                View.OnClickListener { Toast.makeText(this, "点击了我", Toast.LENGTH_SHORT).show() })
+            .setAction("random", View.OnClickListener {
+                Toast.makeText(this, RadomData.getRandomData(listOf("kaylee", "huihui", "honghong", "mami", "babi")), Toast.LENGTH_SHORT).show()
+            })
             .show()
     }
 }
