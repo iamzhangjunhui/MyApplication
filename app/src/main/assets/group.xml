@@ -1,0 +1,10 @@
+<root>
+    <group name="girl">
+        <person name="kaylee" age="12" />
+        <person name="nancy" age="23" />
+    </group>
+    <group name="boy">
+        <person name="andy" age="45" />
+        <person name="bobo" age="34" />
+    </group>
+</root>

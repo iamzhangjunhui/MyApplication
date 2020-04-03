@@ -7,4 +7,5 @@
     <string name="use_room">room使用</string>
     <string name="snackbar">SnackBar的使用</string>
     <string name="material_design">Material Design的学习</string>
+    <string name="use_assets">assets 的使用</string>
 </resources>
