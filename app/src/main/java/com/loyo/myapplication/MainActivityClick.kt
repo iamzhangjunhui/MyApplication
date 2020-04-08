@@ -6,6 +6,7 @@ import com.loyo.myapplication.useAssets.UseAssetsActivity
 import com.loyo.myapplication.materialDesign.MaterialDesignActivity
 import com.loyo.myapplication.recyclerview.RecycleViewActivity
 import com.loyo.myapplication.room.RoomActivity
+import com.loyo.myapplication.workManager.WorkManagerActivity
 
 class MainActivityClick  (private val context: Context) {
     fun toRecycleView() {
@@ -19,5 +20,9 @@ class MainActivityClick  (private val context: Context) {
     }
     fun toAssets(){
         context.startActivity(Intent(context, UseAssetsActivity::class.java))
+    }
+
+    fun toWorkManager(){
+        context.startActivity(Intent(context,WorkManagerActivity::class.java))
     }
 }
