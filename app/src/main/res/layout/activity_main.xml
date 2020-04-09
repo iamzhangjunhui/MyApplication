@@ -8,6 +8,9 @@
         <variable
             name="click"
             type="com.loyo.myapplication.MainActivityClick" />
+        <variable
+            name="item"
+            type="String" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,6 +19,15 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+        <include
+            android:id="@+id/include"
+            layout="@layout/item_recyclerview"
+            app:item="@{item}"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/button"
@@ -77,8 +89,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="19dp"
-            android:text="@string/use_workmanager"
             android:onClick="@{()->click.toWorkManager()}"
+            android:text="@string/use_workmanager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"

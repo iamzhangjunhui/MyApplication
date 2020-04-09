@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main).also {
             it.click = MainActivityClick(this)
+            it.item="kaylee"
+
         }
     }
 }
