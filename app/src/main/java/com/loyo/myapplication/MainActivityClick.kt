@@ -3,6 +3,7 @@ package com.loyo.myapplication
 import android.content.Context
 import android.content.Intent
 import com.loyo.myapplication.kotlinBy.KotlinByActivity
+import com.loyo.myapplication.kotlinT.KotlinTActivity
 import com.loyo.myapplication.useAssets.UseAssetsActivity
 import com.loyo.myapplication.materialDesign.MaterialDesignActivity
 import com.loyo.myapplication.recyclerview.RecycleViewActivity
@@ -32,5 +33,8 @@ class MainActivityClick(private val context: Context) {
 
     fun toKotlinBy() {
         context.startActivity(Intent(context, KotlinByActivity::class.java))
+    }
+    fun tokotlinT(){
+        context.startActivity(Intent(context, KotlinTActivity::class.java))
     }
 }
