@@ -147,13 +147,24 @@
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/kotlin_t"
             android:onClick="@{()->click.tokotlinT()}"
+            android:text="@string/kotlin_t"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button7"
             app:layout_constraintVertical_bias="0.125" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/retrofit_okhttp_rxjava"
+            android:onClick="@{()->click.toRetrofitOkhttpRxjava()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button7" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -2,6 +2,7 @@ package com.loyo.myapplication
 
 import android.content.Context
 import android.content.Intent
+import com.loyo.myapplication.retrofit_use.RetrofitUseActivity
 import com.loyo.myapplication.kotlinBy.KotlinByActivity
 import com.loyo.myapplication.kotlinT.KotlinTActivity
 import com.loyo.myapplication.useAssets.UseAssetsActivity
@@ -34,7 +35,12 @@ class MainActivityClick(private val context: Context) {
     fun toKotlinBy() {
         context.startActivity(Intent(context, KotlinByActivity::class.java))
     }
-    fun tokotlinT(){
+
+    fun tokotlinT() {
         context.startActivity(Intent(context, KotlinTActivity::class.java))
+    }
+
+    fun toRetrofitOkhttpRxjava() {
+        context.startActivity(Intent(context, RetrofitUseActivity::class.java))
     }
 }

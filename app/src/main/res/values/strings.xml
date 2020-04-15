@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
     <string name="app_name">My Application</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -11,4 +11,6 @@
     <string name="use_workmanager">WorkManager学习使用</string>
     <string name="kotlin_by">Kotlin-代理属性(by)的学习使用</string>
     <string name="kotlin_t">kotlin 泛型</string>
+    <string name="retrofit_okhttp_rxjava">Retrofit+Okhttp+Rxjava网框架的学习</string>
+    <string name="data_null">返回数据为空</string>
 </resources>
