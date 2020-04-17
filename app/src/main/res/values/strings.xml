@@ -13,4 +13,8 @@
     <string name="kotlin_t">kotlin 泛型</string>
     <string name="retrofit_okhttp_rxjava">Retrofit+Okhttp+Rxjava网框架的学习</string>
     <string name="data_null">返回数据为空</string>
+    <string name="android_q">androidQ适配</string>
+    <string name="hint">请输入</string>
+    <string name="easypermissions">EasyPermissions的学习和使用</string>
+    <string name="request_permission">请求权限</string>
 </resources>
