@@ -118,6 +118,11 @@
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toEasyPermissions()}"
                 android:text="@string/easypermissions"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->click.toCoroutines()}"
+                android:text="@string/kotlin_use"/>
         </LinearLayout>
 
 

@@ -2,16 +2,10 @@ package com.loyo.myapplication.easy_permissions
 
 
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.target.CustomViewTarget
 import com.loyo.myapplication.R
-import kotlinx.android.synthetic.main.activity_android_q.*
 import kotlinx.android.synthetic.main.activity_easy_permissions.*
 import pub.devrel.easypermissions.AfterPermissionGranted
 import pub.devrel.easypermissions.AppSettingsDialog
@@ -53,12 +47,14 @@ class EasyPermissionsActivity : AppCompatActivity(), EasyPermissions.PermissionC
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        //需要传入receivers：this,否则无法监听到PermissionCallbacks
         EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this)
     }
 
     override fun onPermissionsDenied(requestCode: Int, perms: MutableList<String>) {
         if (EasyPermissions.permissionPermanentlyDenied(this, PERMISSION_WRITE)
         ) {
+            //这个提示框的语言为英文的，可以进行自定义
             AppSettingsDialog.Builder(this).setTitle("需要请求写权限").setRationale("设置为啥必须该权限")
                 .setNegativeButton("取消").setPositiveButton("设置").build().show()
         }
@@ -73,6 +69,7 @@ class EasyPermissionsActivity : AppCompatActivity(), EasyPermissions.PermissionC
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+        //从设置页返回
         if (requestCode == AppSettingsDialog.DEFAULT_SETTINGS_REQ_CODE) { // Do something after user returned from app settings screen, like showing a Toast.
             Toast.makeText(
                 this,
