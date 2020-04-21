@@ -14,7 +14,10 @@ class MaterialDesignActivity : AppCompatActivity() {
             this,
             R.layout.activity_material_design
         ).also {
-            it.click = MaterialDesignActivityClick(this)
+            it.click =
+                MaterialDesignActivityClick(
+                    this
+                )
         }
     }
 }

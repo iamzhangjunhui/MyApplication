@@ -18,5 +18,6 @@
     <string name="easypermissions">EasyPermissions的学习和使用</string>
     <string name="request_permission">请求权限</string>
     <string name="kotlin_use">Kotlin 协程的学习使用</string>
-    <string name="bottomnaviagationview">BottomNaviagationView的学习使用</string>
+    <string name="bottomnaviagationview">BottomNaviagationView与ViewPager2一起使用</string>
+    <string name="bottomnaviagationview_fragment">BottomNaviagationView与Fragment一起使用</string>
 </resources>

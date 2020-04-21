@@ -9,7 +9,7 @@ import com.loyo.myapplication.R
 import com.loyo.myapplication.materialDesign.bottomNavigationViewAndViewPager2.TestFragment.Companion.instasnce
 import kotlinx.android.synthetic.main.activity_bottom_navigation_view.*
 
-class BottomNavigationViewActivity : AppCompatActivity() {
+class BottomNavigationViewAndViewPagerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bottom_navigation_view)

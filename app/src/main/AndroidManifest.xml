@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".materialDesign.bottomNavigationViewAndViewPager2.BottomNavigationViewActivity"></activity>
+        <activity android:name=".materialDesign.bottomNavigationViewAndViewPager2.BottomNavigationViewAndFragmentActivity"></activity>
+        <activity android:name=".materialDesign.bottomNavigationViewAndViewPager2.BottomNavigationViewAndViewPagerActivity" />
         <activity android:name=".coroutines.CoroutinesActivity" />
         <activity android:name=".easy_permissions.EasyPermissionsActivity" />
         <activity
