@@ -7,15 +7,20 @@ import com.loyo.myapplication.materialDesign.bottomNavigationViewAndViewPager2.B
 import com.loyo.myapplication.materialDesign.snackbar.SnackBarActivity
 
 class MaterialDesignActivityClick(var context: Context) {
-    fun toSnackBar(){
+    fun toSnackBar() {
         context.startActivity(Intent(context, SnackBarActivity::class.java))
     }
-    fun toBottomView(){
+
+    fun toBottomView() {
         context.startActivity(Intent(context, BottomNavigationViewAndViewPagerActivity::class.java))
 
     }
-    fun toBottomView2(){
-        context.startActivity(Intent(context, BottomNavigationViewAndFragmentActivity::class.java))
 
+    fun toBottomView2() {
+        context.startActivity(Intent(context, BottomNavigationViewAndFragmentActivity::class.java))
+    }
+
+    fun toAppBarLayout() {
+        context.startActivity(Intent(context, BottomNavigationViewAndFragmentActivity::class.java))
     }
 }
