@@ -32,6 +32,7 @@
                 android:id="@+id/include"
                 layout="@layout/item_recyclerview"
                 app:item="@{item}" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -40,21 +41,22 @@
                 <EditText
                     android:id="@+id/editText"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/hint"
                     android:ems="10"
                     android:hint="@string/hint"
                     android:inputType="textPersonName"
-                    android:text="@={data}"
-                    android:autofillHints="@string/hint" />
+                    android:text="@={data}" />
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="40dp"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:text="@{data}" />
             </LinearLayout>
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -88,8 +90,6 @@
                 android:text="@string/use_workmanager" />
 
 
-
-
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -113,16 +113,24 @@
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toAndroidQ()}"
                 android:text="@string/android_q" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toEasyPermissions()}"
-                android:text="@string/easypermissions"/>
+                android:text="@string/easypermissions" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toCoroutines()}"
-                android:text="@string/kotlin_use"/>
+                android:text="@string/kotlin_use" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->click.toMutiLanguage()}"
+                android:text="@string/muti_languege_setting" />
         </LinearLayout>
 
 

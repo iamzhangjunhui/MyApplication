@@ -2,6 +2,7 @@ package com.loyo.myapplication
 
 import android.content.Context
 import android.content.Intent
+import com.loyo.myapplication.mutiLanguage.MutiLanguageActivity
 import com.loyo.myapplication.android_q.AndroidQActivity
 import com.loyo.myapplication.coroutines.CoroutinesActivity
 import com.loyo.myapplication.easy_permissions.EasyPermissionsActivity
@@ -57,5 +58,9 @@ class MainActivityClick(private val context: Context) {
 
     fun toCoroutines() {
         context.startActivity(Intent(context, CoroutinesActivity::class.java))
+    }
+
+    fun toMutiLanguage() {
+        context.startActivity(Intent(context, MutiLanguageActivity::class.java))
     }
 }

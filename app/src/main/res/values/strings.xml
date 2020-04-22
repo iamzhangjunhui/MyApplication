@@ -20,4 +20,9 @@
     <string name="kotlin_use">Kotlin 协程的学习使用</string>
     <string name="bottomnaviagationview">BottomNaviagationView与ViewPager2一起使用</string>
     <string name="bottomnaviagationview_fragment">BottomNaviagationView与Fragment一起使用</string>
+    <string name="muti_language">多语言</string>
+    <string name="muti_languege_setting">多语言（国际化）配置</string>
+    <string name="chinese">中文简体</string>
+    <string name="english">English</string>
+    <string name="finish">完成</string>
 </resources>
