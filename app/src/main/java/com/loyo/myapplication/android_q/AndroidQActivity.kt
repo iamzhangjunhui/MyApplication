@@ -7,9 +7,11 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.CustomViewTarget
 import com.loyo.myapplication.R
+import com.loyo.myapplication.databinding.ActivityAndroidQBinding
 import kotlinx.android.synthetic.main.activity_android_q.*
 import pub.devrel.easypermissions.AfterPermissionGranted
 import pub.devrel.easypermissions.AppSettingsDialog
@@ -31,7 +33,10 @@ class AndroidQActivity : AppCompatActivity(), EasyPermissions.PermissionCallback
     lateinit var bitmap: Bitmap
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_android_q)
+        DataBindingUtil.setContentView<ActivityAndroidQBinding>(this, R.layout.activity_android_q)
+            .also {
+                it.click = AndroidQClick(this);
+            }
         //部分url图片转成Bitmap有问题，Bitmap不为空但是加载出来是空白，addListener又没有报错
         Glide.with(this).asBitmap()
             .load("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587017992937&di=32880e1a7dedfebc81c7636dd28512d6&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fd009b3de9c82d1587e249850820a19d8bd3e42a9.jpg")

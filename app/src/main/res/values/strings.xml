@@ -25,4 +25,6 @@
     <string name="chinese">中文简体</string>
     <string name="english">English</string>
     <string name="finish">完成</string>
+    <string name="android_10_0">Android 10.0黑暗模式适配</string>
+    <string name="android_10_0_adapter">android 10.0 黑暗模式适配</string>
 </resources>

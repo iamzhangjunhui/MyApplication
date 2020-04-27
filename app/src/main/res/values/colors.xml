@@ -3,4 +3,8 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="red">#F1F44336</color>
+    <!--设置不同主题下的颜色-->
+    <color name="text_color_light">#3700B3</color>
+    <color name="text_color_dark">#03DAC5</color>
 </resources>
