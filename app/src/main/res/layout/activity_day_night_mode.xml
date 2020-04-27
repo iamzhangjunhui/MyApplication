@@ -10,5 +10,6 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/android_10_0_adapter"/>
+        android:text="@string/android_10_0_adapter"
+        android:textColor="?attr/text_color"/>
 </LinearLayout>

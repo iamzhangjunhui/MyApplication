@@ -13,6 +13,8 @@ import com.loyo.myapplication.useAssets.UseAssetsActivity
 import com.loyo.myapplication.materialDesign.MaterialDesignActivity
 import com.loyo.myapplication.recyclerview.RecycleViewActivity
 import com.loyo.myapplication.room.RoomActivity
+import com.loyo.myapplication.statusBar.activity.StatusBarActivity
+import com.loyo.myapplication.statusBar.activity.StatusPictureActivity
 import com.loyo.myapplication.workManager.WorkManagerActivity
 
 class MainActivityClick(private val context: Context) {
@@ -62,5 +64,9 @@ class MainActivityClick(private val context: Context) {
 
     fun toMutiLanguage() {
         context.startActivity(Intent(context, MutiLanguageActivity::class.java))
+    }
+
+    fun toStatusBar() {
+        context.startActivity(Intent(context, StatusBarActivity::class.java))
     }
 }

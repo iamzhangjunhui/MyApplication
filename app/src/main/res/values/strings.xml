@@ -27,4 +27,9 @@
     <string name="finish">完成</string>
     <string name="android_10_0">Android 10.0黑暗模式适配</string>
     <string name="android_10_0_adapter">android 10.0 黑暗模式适配</string>
+    <string name="status_bar_adapter">沉浸式状态栏的适配</string>
+    <string name="status_bar">沉浸式状态栏</string>
+    <string name="status_word_white">自定义状态栏颜色且状态栏文字图标为白色</string>
+    <string name="status_word_black">状态栏文字、图标为黑色</string>
+    <string name="status_picture">图片沉浸到状态栏下</string>
 </resources>
