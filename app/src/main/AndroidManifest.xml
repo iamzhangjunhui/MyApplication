@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/main_theme_light">
-        <activity android:name=".statusBar.activity.StatusBarWordBlackActivity"></activity>
+        <activity android:name=".netStatus.NetStatusActivity"></activity>
+        <activity android:name=".statusBar.activity.StatusBarWordBlackActivity" />
         <activity android:name=".statusBar.activity.StatusBarWordWhiteActivity" />
         <activity android:name=".statusBar.activity.StatusBarActivity" />
         <activity android:name=".statusBar.activity.StatusPictureActivity" />
@@ -52,7 +53,8 @@
         <activity android:name=".materialDesign.snackbar.SnackBarActivity" />
         <activity android:name=".room.RoomActivity" />
         <activity android:name=".recyclerview.RecycleViewActivity" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

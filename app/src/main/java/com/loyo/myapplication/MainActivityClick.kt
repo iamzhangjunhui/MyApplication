@@ -11,6 +11,7 @@ import com.loyo.myapplication.kotlinBy.KotlinByActivity
 import com.loyo.myapplication.kotlinT.KotlinTActivity
 import com.loyo.myapplication.useAssets.UseAssetsActivity
 import com.loyo.myapplication.materialDesign.MaterialDesignActivity
+import com.loyo.myapplication.netStatus.NetStatusActivity
 import com.loyo.myapplication.recyclerview.RecycleViewActivity
 import com.loyo.myapplication.room.RoomActivity
 import com.loyo.myapplication.statusBar.activity.StatusBarActivity
@@ -68,5 +69,9 @@ class MainActivityClick(private val context: Context) {
 
     fun toStatusBar() {
         context.startActivity(Intent(context, StatusBarActivity::class.java))
+    }
+
+    fun toNetStatus() {
+        context.startActivity(Intent(context, NetStatusActivity::class.java))
     }
 }

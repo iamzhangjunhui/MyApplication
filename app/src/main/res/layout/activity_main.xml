@@ -131,11 +131,18 @@
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toMutiLanguage()}"
                 android:text="@string/muti_languege_setting" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toStatusBar()}"
-                android:text="@string/status_bar_adapter"/>
+                android:text="@string/status_bar_adapter" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->click.toNetStatus()}"
+                android:text="@string/net_status" />
         </LinearLayout>
 
 
