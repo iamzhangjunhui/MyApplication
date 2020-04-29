@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.loyo.myapplication.navigation.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment2"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/commonFragment"
+        android:name="com.loyo.myapplication.navigation.fragment.CommonFragment"
+        android:label="fragment_common"
+        tools:layout="@layout/fragment_common" />
+    <fragment
+        android:id="@+id/crmFragment"
+        android:name="com.loyo.myapplication.navigation.fragment.CrmFragment"
+        android:label="fragment_crm"
+        tools:layout="@layout/fragment_crm" />
+    <fragment
+        android:id="@+id/oaFragment"
+        android:name="com.loyo.myapplication.navigation.fragment.OaFragment"
+        android:label="fragment_oa"
+        tools:layout="@layout/fragment_oa" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.loyo.myapplication.navigation.fragment.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.loyo.myapplication.navigation.fragment.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_subDetailFragment"
+            app:destination="@id/subDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subDetailFragment"
+        android:name="com.loyo.myapplication.navigation.fragment.SubDetailFragment"
+        android:label="fragment_sub_detail"
+        tools:layout="@layout/fragment_sub_detail" />
+</navigation>

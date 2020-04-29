@@ -33,4 +33,12 @@
     <string name="status_word_black">状态栏文字、图标为黑色</string>
     <string name="status_picture">图片沉浸到状态栏下</string>
     <string name="net_status">Android 5.0以下使用广播接受者的方式监听是否有网，Android 5.0及以上使用回调的方式监听是否有网</string>
+    <string name="jetpack_navigation_activity">jetpack navigation 实现单activity架构</string>
+    <string name="commonfragment">CommonFragment</string>
+    <string name="crmfragment">CrmFragment</string>
+    <string name="detailfragment">DetailFragment</string>
+    <string name="homefragment">HomeFragment</string>
+    <string name="oafragment">OaFragment</string>
+    <string name="subdetailfragment">SubDetailFragment</string>
+    <string name="notificationfragment">NotificationFragment</string>
 </resources>

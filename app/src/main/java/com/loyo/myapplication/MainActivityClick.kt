@@ -11,6 +11,7 @@ import com.loyo.myapplication.kotlinBy.KotlinByActivity
 import com.loyo.myapplication.kotlinT.KotlinTActivity
 import com.loyo.myapplication.useAssets.UseAssetsActivity
 import com.loyo.myapplication.materialDesign.MaterialDesignActivity
+import com.loyo.myapplication.navigation.NavigationActivity
 import com.loyo.myapplication.netStatus.NetStatusActivity
 import com.loyo.myapplication.recyclerview.RecycleViewActivity
 import com.loyo.myapplication.room.RoomActivity
@@ -73,5 +74,9 @@ class MainActivityClick(private val context: Context) {
 
     fun toNetStatus() {
         context.startActivity(Intent(context, NetStatusActivity::class.java))
+    }
+
+    fun toNavigation() {
+        context.startActivity(Intent(context, NavigationActivity::class.java))
     }
 }
