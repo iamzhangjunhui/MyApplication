@@ -5,6 +5,7 @@ import android.content.Intent
 import com.loyo.myapplication.mutiLanguage.MutiLanguageActivity
 import com.loyo.myapplication.android_q.AndroidQActivity
 import com.loyo.myapplication.coroutines.CoroutinesActivity
+import com.loyo.myapplication.displayCutout.DisplayCutoutActivity
 import com.loyo.myapplication.easy_permissions.EasyPermissionsActivity
 import com.loyo.myapplication.retrofit_use.RetrofitUseActivity
 import com.loyo.myapplication.kotlinBy.KotlinByActivity
@@ -78,5 +79,9 @@ class MainActivityClick(private val context: Context) {
 
     fun toNavigation() {
         context.startActivity(Intent(context, NavigationActivity::class.java))
+    }
+
+    fun toDisplayCutout(){
+        context.startActivity(Intent(context, DisplayCutoutActivity::class.java))
     }
 }

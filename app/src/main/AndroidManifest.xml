@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/main_theme_light">
-        <activity android:name=".navigation.NavigationActivity"></activity>
+        <activity android:name=".displayCutout.DisplayCutoutActivity"
+            android:theme="@style/dispaly_cutout_theme"/>
+        <activity android:name=".navigation.NavigationActivity" />
         <activity android:name=".netStatus.NetStatusActivity" />
         <activity android:name=".statusBar.activity.StatusBarWordBlackActivity" />
         <activity android:name=".statusBar.activity.StatusBarWordWhiteActivity" />

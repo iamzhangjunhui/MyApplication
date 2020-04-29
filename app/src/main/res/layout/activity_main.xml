@@ -148,7 +148,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toNavigation()}"
-                android:text="@string/jetpack_navigation_activity"/>
+                android:text="@string/jetpack_navigation_activity" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->click.toDisplayCutout()}"
+                android:text="@string/display_cutout" />
         </LinearLayout>
 
 
