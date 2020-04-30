@@ -43,4 +43,6 @@
     <string name="notificationfragment">NotificationFragment</string>
     <string name="display_cutout">android 9.0刘海屏的适配</string>
     <string name="toolbar">ToolBar的使用</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
 </resources>

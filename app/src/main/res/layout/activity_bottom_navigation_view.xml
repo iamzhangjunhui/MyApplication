@@ -20,5 +20,5 @@
         app:labelVisibilityMode="labeled"
         app:itemIconTint="@color/color_bottom_color"
         app:itemTextColor="@color/color_bottom_color"
-        app:menu="@menu/menu_bottom_view" />
+        app:menu="@menu/menu_navigation_common" />
 </LinearLayout>
