@@ -42,4 +42,5 @@
     <string name="subdetailfragment">SubDetailFragment</string>
     <string name="notificationfragment">NotificationFragment</string>
     <string name="display_cutout">android 9.0刘海屏的适配</string>
+    <string name="toolbar">ToolBar的使用</string>
 </resources>

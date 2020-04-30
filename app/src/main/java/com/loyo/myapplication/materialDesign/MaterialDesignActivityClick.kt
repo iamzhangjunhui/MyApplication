@@ -5,6 +5,7 @@ import android.content.Intent
 import com.loyo.myapplication.materialDesign.bottomNavigationViewAndViewPager2.BottomNavigationViewAndFragmentActivity
 import com.loyo.myapplication.materialDesign.bottomNavigationViewAndViewPager2.BottomNavigationViewAndViewPagerActivity
 import com.loyo.myapplication.materialDesign.snackbar.SnackBarActivity
+import com.loyo.myapplication.materialDesign.toolBar.ToolBarActivity
 
 class MaterialDesignActivityClick(var context: Context) {
     fun toSnackBar() {
@@ -22,5 +23,9 @@ class MaterialDesignActivityClick(var context: Context) {
 
     fun toAppBarLayout() {
         context.startActivity(Intent(context, BottomNavigationViewAndFragmentActivity::class.java))
+    }
+
+    fun toToolBar() {
+        context.startActivity(Intent(context, ToolBarActivity::class.java))
     }
 }

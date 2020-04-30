@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/view"
+        android:icon="@drawable/ic_graphic_eq_black_24dp"
+        android:title="首页"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/view2"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="第二页"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/view3"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="第三页"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/view4"
+        android:icon="@drawable/ic_info_outline_black_24dp"
+        android:title="第四页"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/view5"
+        android:icon="@drawable/ic_my_integral"
+        android:title="第五页"
+        app:showAsAction="ifRoom" />
+
+</menu>
