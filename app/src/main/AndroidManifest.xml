@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/main_theme_light">
-        <activity android:name=".materialDesign.drawerLayout.DrawerLayoutActivity"></activity>
+        <activity android:name=".materialDesign.drawerLayoutAndNavigationView.DrawerLayoutAndNavigationViewActivity"></activity>
         <activity android:name=".materialDesign.toolBar.ToolBarWeNeedActivity" />
         <activity android:name=".materialDesign.toolBar.ToolBarActivity" />
         <activity
