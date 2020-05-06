@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import com.loyo.myapplication.mutiLanguage.MutiLanguageActivity
 import com.loyo.myapplication.android_q.AndroidQActivity
+import com.loyo.myapplication.banner.BannerActivity
 import com.loyo.myapplication.coroutines.CoroutinesActivity
 import com.loyo.myapplication.displayCutout.DisplayCutoutActivity
 import com.loyo.myapplication.easy_permissions.EasyPermissionsActivity
@@ -81,7 +82,11 @@ class MainActivityClick(private val context: Context) {
         context.startActivity(Intent(context, NavigationActivity::class.java))
     }
 
-    fun toDisplayCutout(){
+    fun toDisplayCutout() {
         context.startActivity(Intent(context, DisplayCutoutActivity::class.java))
+    }
+
+    fun toBanner() {
+        context.startActivity(Intent(context, BannerActivity::class.java))
     }
 }

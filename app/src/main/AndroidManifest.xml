@@ -12,8 +12,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/net_config"
         android:theme="@style/main_theme_light">
-        <activity android:name=".materialDesign.drawerLayoutAndNavigationView.DrawerLayoutAndNavigationViewActivity"></activity>
+        <activity android:name=".banner.BannerActivity"></activity>
+        <activity android:name=".materialDesign.drawerLayoutAndNavigationView.DrawerLayoutAndNavigationViewActivity" />
         <activity android:name=".materialDesign.toolBar.ToolBarWeNeedActivity" />
         <activity android:name=".materialDesign.toolBar.ToolBarActivity" />
         <activity
