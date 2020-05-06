@@ -5,6 +5,7 @@ import android.content.Intent
 import com.loyo.myapplication.materialDesign.bottomNavigationViewAndViewPager2.BottomNavigationViewAndFragmentActivity
 import com.loyo.myapplication.materialDesign.bottomNavigationViewAndViewPager2.BottomNavigationViewAndViewPagerActivity
 import com.loyo.myapplication.materialDesign.drawerLayoutAndNavigationView.DrawerLayoutAndNavigationViewActivity
+import com.loyo.myapplication.materialDesign.floatingActionMenu.FloatingActionMenuActivity
 import com.loyo.myapplication.materialDesign.snackbar.SnackBarActivity
 import com.loyo.myapplication.materialDesign.toolBar.ToolBarActivity
 
@@ -32,5 +33,9 @@ class MaterialDesignActivityClick(var context: Context) {
 
     fun toDrawerLayout() {
         context.startActivity(Intent(context, DrawerLayoutAndNavigationViewActivity::class.java))
+    }
+
+    fun toFloatingActionMenu() {
+        context.startActivity(Intent(context, FloatingActionMenuActivity::class.java))
     }
 }

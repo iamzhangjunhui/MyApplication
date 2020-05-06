@@ -80,6 +80,8 @@ dependencies {
     //Banner
     implementation 'com.youth.banner:banner:2.0.8'
 
+    //FloatingActionMenu
+    implementation 'com.github.clans:fab:1.6.4'
 
 
 }
