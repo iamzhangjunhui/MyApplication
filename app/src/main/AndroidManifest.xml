@@ -47,9 +47,9 @@
         <activity
             android:name=".android_q.AndroidQActivity"
             android:exported="true" />
-        <activity android:name=".retrofit_use.base.LivecycleActivity" />
+        <activity android:name=".retrofit_okhttp_rxjava_use.base.LivecycleActivity" />
         <activity
-            android:name=".retrofit_use.RetrofitUseActivity"
+            android:name=".retrofit_okhttp_rxjava_use.RetrofitUseActivity"
             android:exported="true" />
         <activity
             android:name=".kotlinT.KotlinTActivity"

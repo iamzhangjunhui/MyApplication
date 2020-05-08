@@ -8,7 +8,7 @@ import com.loyo.myapplication.banner.BannerActivity
 import com.loyo.myapplication.coroutines.CoroutinesActivity
 import com.loyo.myapplication.displayCutout.DisplayCutoutActivity
 import com.loyo.myapplication.easy_permissions.EasyPermissionsActivity
-import com.loyo.myapplication.retrofit_use.RetrofitUseActivity
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.RetrofitUseActivity
 import com.loyo.myapplication.kotlinBy.KotlinByActivity
 import com.loyo.myapplication.kotlinT.KotlinTActivity
 import com.loyo.myapplication.useAssets.UseAssetsActivity
@@ -18,7 +18,6 @@ import com.loyo.myapplication.netStatus.NetStatusActivity
 import com.loyo.myapplication.recyclerview.RecycleViewActivity
 import com.loyo.myapplication.room.RoomActivity
 import com.loyo.myapplication.statusBar.activity.StatusBarActivity
-import com.loyo.myapplication.statusBar.activity.StatusPictureActivity
 import com.loyo.myapplication.workManager.WorkManagerActivity
 
 class MainActivityClick(private val context: Context) {

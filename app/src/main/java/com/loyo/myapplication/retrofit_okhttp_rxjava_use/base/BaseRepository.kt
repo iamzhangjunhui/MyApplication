@@ -1,4 +1,4 @@
-package com.loyo.myapplication.retrofit_use.base
+package com.loyo.myapplication.retrofit_okhttp_rxjava_use.base
 
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.disposables.Disposable

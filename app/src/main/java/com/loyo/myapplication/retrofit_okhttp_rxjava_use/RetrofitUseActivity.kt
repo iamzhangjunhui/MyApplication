@@ -1,15 +1,11 @@
-package com.loyo.myapplication.retrofit_use
+package com.loyo.myapplication.retrofit_okhttp_rxjava_use
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
 import com.loyo.myapplication.R
-import com.loyo.myapplication.retrofit_use.banner.bean.BannerRsp
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.banner.bean.BannerRsp
 import com.loyo.myapplication.databinding.ActivityRetrofitOkhttpRxjavaBinding
-import com.loyo.myapplication.retrofit_use.base.LivecycleActivity
-import com.loyo.myapplication.retrofit_use.net.State
-import com.loyo.myapplication.retrofit_use.net.StateType
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.base.LivecycleActivity
 
 
 class RetrofitUseActivity :

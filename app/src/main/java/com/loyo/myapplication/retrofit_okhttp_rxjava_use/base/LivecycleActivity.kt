@@ -1,4 +1,4 @@
-package com.loyo.myapplication.retrofit_use.base
+package com.loyo.myapplication.retrofit_okhttp_rxjava_use.base
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,8 +9,8 @@ import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.loyo.myapplication.Util.ReflectUtil
-import com.loyo.myapplication.retrofit_use.net.State
-import com.loyo.myapplication.retrofit_use.net.StateType
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.net.State
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.net.StateType
 
 /**
  * activity基类

@@ -7,7 +7,7 @@
 
         <import type="androidx.lifecycle.MutableLiveData" />
 
-        <import type="com.loyo.myapplication.retrofit_use.banner.bean.BannerRsp" />
+        <import type="com.loyo.myapplication.retrofit_okhttp_rxjava_use.banner.bean.BannerRsp" />
 
         <variable
             name="list"
@@ -19,7 +19,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".retrofit_use.RetrofitUseActivity">
+        tools:context=".retrofit_okhttp_rxjava_use.RetrofitUseActivity">
 
         <TextView
             android:id="@+id/textView4"

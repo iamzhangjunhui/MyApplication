@@ -1,10 +1,10 @@
-package com.loyo.myapplication.retrofit_use.base
+package com.loyo.myapplication.retrofit_okhttp_rxjava_use.base
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
-import com.loyo.myapplication.retrofit_use.net.BaseResponse
-import com.loyo.myapplication.retrofit_use.net.State
-import com.loyo.myapplication.retrofit_use.net.StateType
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.net.BaseResponse
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.net.State
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.net.StateType
 import io.reactivex.rxjava3.core.Observer
 import io.reactivex.rxjava3.disposables.Disposable
 

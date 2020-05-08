@@ -1,4 +1,4 @@
-package com.loyo.myapplication.retrofit_use.net
+package com.loyo.myapplication.retrofit_okhttp_rxjava_use.net
 
 /**
  * author：  HyZhan

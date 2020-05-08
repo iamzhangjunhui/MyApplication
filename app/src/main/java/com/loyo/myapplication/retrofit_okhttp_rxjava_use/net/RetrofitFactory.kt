@@ -1,4 +1,4 @@
-package com.loyo.myapplication.retrofit_use.net
+package com.loyo.myapplication.retrofit_okhttp_rxjava_use.net
 
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import okhttp3.Interceptor

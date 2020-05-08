@@ -1,4 +1,4 @@
-package com.loyo.myapplication.retrofit_use.banner.bean
+package com.loyo.myapplication.retrofit_okhttp_rxjava_use.banner.bean
 
 /**
  * author：  HyZhan

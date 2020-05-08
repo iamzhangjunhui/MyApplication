@@ -1,4 +1,4 @@
-package com.loyo.myapplication.materialDesign;
+package com.loyo.myapplication.materialDesign
 
 import android.content.Context
 import android.content.Intent

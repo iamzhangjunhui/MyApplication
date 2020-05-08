@@ -1,11 +1,11 @@
-package com.loyo.myapplication.retrofit_use
+package com.loyo.myapplication.retrofit_okhttp_rxjava_use
 
 import android.app.Application
 import androidx.lifecycle.MutableLiveData
-import com.loyo.myapplication.retrofit_use.banner.BannerRepository
-import com.loyo.myapplication.retrofit_use.banner.bean.BannerRsp
-import com.loyo.myapplication.retrofit_use.base.BaseViewModel
-import com.loyo.myapplication.retrofit_use.net.State
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.banner.BannerRepository
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.banner.bean.BannerRsp
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.base.BaseViewModel
+import com.loyo.myapplication.retrofit_okhttp_rxjava_use.net.State
 
 class BannerViewModel(application: Application) :
     BaseViewModel<BannerRepository>(application) {
