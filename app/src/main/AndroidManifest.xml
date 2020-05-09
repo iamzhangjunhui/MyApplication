@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/main_theme_light">
-        <activity android:name=".materialDesign.floatingActionMenu.FloatingActionMenuActivity"></activity>
+        <activity android:name=".Retrofit_okhttp_coroutines.RetrofitRxJavaCoroutinesBannerActivity"></activity>
+        <activity android:name=".materialDesign.floatingActionMenu.FloatingActionMenuActivity" />
         <activity android:name=".banner.BannerActivity" />
         <activity android:name=".materialDesign.drawerLayoutAndNavigationView.DrawerLayoutAndNavigationViewActivity" />
         <activity android:name=".materialDesign.toolBar.ToolBarWeNeedActivity" />

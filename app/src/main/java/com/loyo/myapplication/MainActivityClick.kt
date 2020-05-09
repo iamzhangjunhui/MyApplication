@@ -2,6 +2,7 @@ package com.loyo.myapplication
 
 import android.content.Context
 import android.content.Intent
+import com.loyo.myapplication.Retrofit_okhttp_coroutines.RetrofitRxJavaCoroutinesBannerActivity
 import com.loyo.myapplication.mutiLanguage.MutiLanguageActivity
 import com.loyo.myapplication.android_q.AndroidQActivity
 import com.loyo.myapplication.banner.BannerActivity
@@ -51,6 +52,10 @@ class MainActivityClick(private val context: Context) {
 
     fun toRetrofitOkhttpRxjava() {
         context.startActivity(Intent(context, RetrofitUseActivity::class.java))
+    }
+
+    fun toRetrofitOkhttpCoroutines() {
+        context.startActivity(Intent(context, RetrofitRxJavaCoroutinesBannerActivity::class.java))
     }
 
     fun toAndroidQ() {

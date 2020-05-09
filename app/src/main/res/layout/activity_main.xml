@@ -107,6 +107,11 @@
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toRetrofitOkhttpRxjava()}"
                 android:text="@string/retrofit_okhttp_rxjava" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->click.toRetrofitOkhttpCoroutines()}"
+                android:text="Retrofit + Okhttp +Kotlin协程 框架的学习使用"/>
 
             <Button
                 android:layout_width="match_parent"
