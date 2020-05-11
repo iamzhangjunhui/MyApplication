@@ -4,13 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="java.util.List"/>
-        <import type="android.text.TextUtils"/>
-        <import type="com.loyo.myapplication.retrofit_okhttp_rxjava_use.banner.bean.BannerRsp"/>
-        <import type="androidx.lifecycle.MutableLiveData"/>
-    <variable
-        name="banners"
-        type="MutableLiveData&lt;List&lt;BannerRsp>>" />
+
+        <import type="java.util.List" />
+
+        <import type="android.text.TextUtils" />
+
+        <import type="com.loyo.myapplication.retrofit_okhttp_rxjava_use.banner.bean.BannerRsp" />
+
+        <import type="androidx.lifecycle.MutableLiveData" />
+
+
+        <import type="android.view.View" />
+
+        <import type="com.loyo.myapplication.NetState" />
+
+        <variable
+            name="banners"
+            type="MutableLiveData&lt;List&lt;BannerRsp>>" />
+
+        <variable
+            name="netState"
+            type="MutableLiveData&lt;NetState>" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,8 +37,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="310dp"
-            android:text='@{banners==null ? "空":banners.toString()}'
             android:gravity="center"
+            android:text='@{banners==null ? "空":banners.toString()}'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="134dp"
+            android:visibility="@{(netState==NetState.Default||netState==NetState.Success)?View.GONE:View.VISIBLE}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
