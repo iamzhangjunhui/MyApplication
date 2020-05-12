@@ -42,6 +42,10 @@
         <action
             android:id="@+id/action_detailFragment_to_subDetailFragment"
             app:destination="@id/subDetailFragment" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="default" />
     </fragment>
     <fragment
         android:id="@+id/subDetailFragment"

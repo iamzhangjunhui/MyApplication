@@ -27,8 +27,12 @@ class DetailFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        arguments?.let {
+            val args = DetailFragmentArgs.fromBundle(it)
+            text.text = args.name
+        }
         button.setOnClickListener {
-                Navigation.findNavController(it)
+            Navigation.findNavController(it)
                 .navigate(R.id.action_detailFragment_to_subDetailFragment)
         }
     }
