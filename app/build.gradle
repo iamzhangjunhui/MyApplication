@@ -81,4 +81,7 @@ dependencies {
 
     //FloatingActionMenu
     implementation 'com.github.clans:fab:1.6.4'
+    if (!TEST_IS_APP.toBoolean()){
+       implementation project(':test')
+    }
 }

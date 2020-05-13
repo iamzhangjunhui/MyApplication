@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.Navigation
 import com.loyo.myapplication.R
-import com.loyo.myapplication.navigation.NavigationActivity
 import com.loyo.myapplication.navigation.TestResultActivity
 import kotlinx.android.synthetic.main.fragment_home.*
 
