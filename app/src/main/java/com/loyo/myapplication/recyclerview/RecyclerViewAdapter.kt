@@ -11,13 +11,13 @@ import com.loyo.myapplication.databinding.ItemRecyclerviewBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
-class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(), ItemChanged {
     var list = arrayListOf<String>()
-    private set
+        private set
 
-     fun setData(arrayList: ArrayList<String>) {
+    fun setData(arrayList: ArrayList<String>) {
         if (list.size != 0) {
-           var result: DiffUtil.DiffResult = DiffUtil.calculateDiff(object : DiffUtil.Callback() {
+            var result: DiffUtil.DiffResult = DiffUtil.calculateDiff(object : DiffUtil.Callback() {
                 override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
                     return TextUtils.equals(list[oldItemPosition], arrayList[newItemPosition])
                 }
@@ -42,7 +42,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
             result.dispatchUpdatesTo(this)
         } else {
             list.addAll(arrayList)
-            notifyItemRangeInserted(0,list.size)
+            notifyItemRangeInserted(0, list.size)
         }
     }
 
@@ -67,6 +67,17 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
 
     class ViewHolder(var itemRecyclerviewBinding: ItemRecyclerviewBinding) :
         RecyclerView.ViewHolder(itemRecyclerviewBinding.root) {
+
+    }
+
+    override fun move(fromIndex: Int, toIndex: Int) {
+        Collections.swap(list, fromIndex, toIndex);
+        notifyItemMoved(fromIndex, toIndex)
+    }
+
+    override fun delete(deleteIndex: Int) {
+        list.removeAt(deleteIndex)
+        notifyItemRemoved(deleteIndex)
 
     }
 }
