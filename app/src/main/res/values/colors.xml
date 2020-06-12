@@ -7,4 +7,6 @@
     <!--设置不同主题下的颜色-->
     <color name="text_color_light">#3700B3</color>
     <color name="text_color_dark">#03DAC5</color>
+    <color name="text_color">#e6000000</color>
+    <color name="color_split_line">#33000000</color>
 </resources>

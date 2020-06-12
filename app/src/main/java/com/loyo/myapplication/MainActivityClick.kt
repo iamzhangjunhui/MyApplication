@@ -17,6 +17,8 @@ import com.loyo.myapplication.materialDesign.MaterialDesignActivity
 import com.loyo.myapplication.navigation.NavigationActivity
 import com.loyo.myapplication.netStatus.NetStatusActivity
 import com.loyo.myapplication.recyclerview.RecycleViewActivity
+import com.loyo.myapplication.recyclerview.recyclerView_listadapter.RecyclerViewListAdaoterActivity
+import com.loyo.myapplication.recyclerview.recyclerView.UseRecycleViewActivity
 import com.loyo.myapplication.room.RoomActivity
 import com.loyo.myapplication.statusBar.activity.StatusBarActivity
 import com.loyo.myapplication.workManager.WorkManagerActivity
@@ -92,5 +94,8 @@ class MainActivityClick(private val context: Context) {
 
     fun toBanner() {
         context.startActivity(Intent(context, BannerActivity::class.java))
+    }
+    fun toPaging(){
+
     }
 }

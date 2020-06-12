@@ -1,4 +1,4 @@
-package com.loyo.myapplication.recyclerview
+package com.loyo.myapplication.recyclerview.recyclerView
 
 interface ItemChanged {
     fun move(fromIndex:Int,toIndex:Int)

@@ -1,9 +1,9 @@
-package com.loyo.myapplication.recyclerview
+package com.loyo.myapplication.recyclerview.recyclerView
 
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 
-class ItemTouchChangedCallBack (val adapter:RecyclerViewAdapter):ItemTouchHelper.Callback() {
+class ItemTouchChangedCallBack (val adapter: RecyclerViewAdapter):ItemTouchHelper.Callback() {
     override fun getMovementFlags(
         recyclerView: RecyclerView,
         viewHolder: RecyclerView.ViewHolder

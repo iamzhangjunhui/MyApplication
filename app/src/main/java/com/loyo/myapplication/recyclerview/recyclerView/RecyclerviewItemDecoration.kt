@@ -1,4 +1,4 @@
-package com.loyo.myapplication.recyclerview
+package com.loyo.myapplication.recyclerview.recyclerView
 
 import android.graphics.Canvas
 import android.graphics.Color

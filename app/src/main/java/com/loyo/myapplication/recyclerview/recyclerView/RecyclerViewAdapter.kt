@@ -1,4 +1,4 @@
-package com.loyo.myapplication.recyclerview
+package com.loyo.myapplication.recyclerview.recyclerView
 
 import android.text.TextUtils
 import android.view.LayoutInflater
@@ -11,7 +11,8 @@ import com.loyo.myapplication.databinding.ItemRecyclerviewBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
-class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(), ItemChanged {
+class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(),
+    ItemChanged {
     var list = arrayListOf<String>()
         private set
 
@@ -50,7 +51,9 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
         val itemRecyclerviewBinding = DataBindingUtil.inflate<ItemRecyclerviewBinding>(
             LayoutInflater.from(parent.context), R.layout.item_recyclerview, parent, false
         )
-        return ViewHolder(itemRecyclerviewBinding)
+        return ViewHolder(
+            itemRecyclerviewBinding
+        )
     }
 
     override fun getItemCount(): Int {

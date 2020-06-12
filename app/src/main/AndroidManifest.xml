@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".MainApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/main_theme_light">
-        <activity android:name=".navigation.TestResultActivity"></activity>
+        <activity android:name=".recyclerview.RecycleViewActivity"></activity>
+        <activity android:name=".recyclerview.recyclerView_listadapter.RecyclerViewListAdaoterActivity" />
+        <activity android:name=".navigation.TestResultActivity" />
         <activity android:name=".Retrofit_okhttp_coroutines.RetrofitRxJavaCoroutinesBannerActivity" />
         <activity android:name=".materialDesign.floatingActionMenu.FloatingActionMenuActivity" />
         <activity android:name=".banner.BannerActivity" />
@@ -64,7 +67,7 @@
         <activity android:name=".materialDesign.MaterialDesignActivity" />
         <activity android:name=".materialDesign.snackbar.SnackBarActivity" />
         <activity android:name=".room.RoomActivity" />
-        <activity android:name=".recyclerview.RecycleViewActivity" />
+        <activity android:name=".recyclerview.recyclerView.UseRecycleViewActivity" />
         <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="stateHidden">
