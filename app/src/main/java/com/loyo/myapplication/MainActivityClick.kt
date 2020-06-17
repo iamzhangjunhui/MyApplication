@@ -9,6 +9,7 @@ import com.loyo.myapplication.banner.BannerActivity
 import com.loyo.myapplication.coroutines.CoroutinesActivity
 import com.loyo.myapplication.displayCutout.DisplayCutoutActivity
 import com.loyo.myapplication.easy_permissions.EasyPermissionsActivity
+import com.loyo.myapplication.gesture_detector_compat.UseGestureDetectorCompatInActivity
 import com.loyo.myapplication.retrofit_okhttp_rxjava_use.RetrofitUseActivity
 import com.loyo.myapplication.kotlinBy.KotlinByActivity
 import com.loyo.myapplication.kotlinT.KotlinTActivity
@@ -97,5 +98,8 @@ class MainActivityClick(private val context: Context) {
     }
     fun toPaging(){
 
+    }
+    fun toGestureDetectorCompat(){
+        context.startActivity(Intent(context,UseGestureDetectorCompatInActivity::class.java))
     }
 }

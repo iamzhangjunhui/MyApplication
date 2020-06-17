@@ -171,6 +171,11 @@
                 android:layout_height="wrap_content"
                 android:text="paging的学习使用"
                 android:onClick="@{()->click.toPaging()}"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GestureDetectorCompat的学习使用"
+                android:onClick="@{()->click.toGestureDetectorCompat()}"/>
 
         </LinearLayout>
 
