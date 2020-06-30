@@ -2,6 +2,7 @@ package com.loyo.myapplication.materialDesign
 
 import android.content.Context
 import android.content.Intent
+import com.loyo.myapplication.materialDesign.appBarLayout.AppBarLayoutActivity
 import com.loyo.myapplication.materialDesign.bottomNavigationViewAndViewPager2.BottomNavigationViewAndFragmentActivity
 import com.loyo.myapplication.materialDesign.bottomNavigationViewAndViewPager2.BottomNavigationViewAndViewPagerActivity
 import com.loyo.myapplication.materialDesign.drawerLayoutAndNavigationView.DrawerLayoutAndNavigationViewActivity
@@ -24,7 +25,7 @@ class MaterialDesignActivityClick(var context: Context) {
     }
 
     fun toAppBarLayout() {
-        context.startActivity(Intent(context, BottomNavigationViewAndFragmentActivity::class.java))
+        context.startActivity(Intent(context, AppBarLayoutActivity::class.java))
     }
 
     fun toToolBar() {
