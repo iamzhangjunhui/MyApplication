@@ -102,5 +102,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button20" />
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SlidingPaneLayout的学习使用"
+            app:layout_constraintTop_toBottomOf="@id/button22"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="@{()->click.toSlidingPaneLayoutActivity()}"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

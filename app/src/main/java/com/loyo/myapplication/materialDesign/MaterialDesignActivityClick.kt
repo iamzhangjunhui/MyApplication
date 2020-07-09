@@ -7,6 +7,7 @@ import com.loyo.myapplication.materialDesign.bottomNavigationViewAndViewPager2.B
 import com.loyo.myapplication.materialDesign.bottomNavigationViewAndViewPager2.BottomNavigationViewAndViewPagerActivity
 import com.loyo.myapplication.materialDesign.drawerLayoutAndNavigationView.DrawerLayoutAndNavigationViewActivity
 import com.loyo.myapplication.materialDesign.floatingActionMenu.FloatingActionMenuActivity
+import com.loyo.myapplication.materialDesign.slidingPaneLayout.SlidingPaneLayoutActivity
 import com.loyo.myapplication.materialDesign.snackbar.SnackBarActivity
 import com.loyo.myapplication.materialDesign.toolBar.ToolBarActivity
 
@@ -38,5 +39,8 @@ class MaterialDesignActivityClick(var context: Context) {
 
     fun toFloatingActionMenu() {
         context.startActivity(Intent(context, FloatingActionMenuActivity::class.java))
+    }
+    fun toSlidingPaneLayoutActivity(){
+        context.startActivity(Intent(context, SlidingPaneLayoutActivity::class.java))
     }
 }
