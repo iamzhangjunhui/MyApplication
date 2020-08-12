@@ -50,4 +50,7 @@
     <string name="retrofit_okhttp_kotlin">Retrofit + Okhttp +Kotlin协程 框架的学习使用</string>
     <string name="customer">客户</string>
     <string name="sort">排序</string>
+    <string name="long_lab">长名称</string>
+    <string name="short_lab">短名称</string>
+
 </resources>

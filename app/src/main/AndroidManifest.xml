@@ -15,8 +15,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/main_theme_light">
-        <activity android:name=".materialDesign.slidingPaneLayout.SlidingPaneLayoutActivity"
-            android:theme="@style/slide_activity"/>
+        <activity android:name=".shortcuts.TestActivity">
+            <intent-filter>
+                <action android:name="com.loyo.myapplication.TEST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".materialDesign.slidingPaneLayout.SlidingPaneLayoutActivity"
+            android:theme="@style/slide_activity" />
         <activity android:name=".viewdraghelper.UseViewDragHelperActivity" />
         <activity android:name=".gesture_detector_compat.UseGestureDetectorCompatInViewActivity" />
         <activity android:name=".gesture_detector_compat.UseGestureDetectorCompatInActivity" />
@@ -81,6 +88,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
         </activity>
     </application>
 

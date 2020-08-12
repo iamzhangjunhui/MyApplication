@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:icon="@drawable/ic_home_black_24dp"
+        android:shortcutId="test"
+        android:shortcutLongLabel="@string/long_lab"
+        android:shortcutShortLabel="@string/short_lab">
+<intent
+            android:action="com.loyo.myapplication.TEST"
+            android:targetClass="com.loyo.myapplication.shortcuts.TestActivity"
+            android:targetPackage="com.loyo.myapplication" />
+
+    </shortcut>
+</shortcuts>
