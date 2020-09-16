@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ObservableField
 import com.loyo.myapplication.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 import pub.devrel.easypermissions.AfterPermissionGranted
 import pub.devrel.easypermissions.EasyPermissions
 import java.util.jar.Manifest
@@ -19,7 +20,6 @@ class MainActivity : AppCompatActivity() {
             data.set("KAYLEE")
             it.data = data
             it.item = "kaylee"
-
         }
     }
 

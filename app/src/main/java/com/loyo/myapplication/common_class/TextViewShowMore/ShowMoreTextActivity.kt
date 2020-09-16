@@ -8,6 +8,9 @@ import com.loyo.myapplication.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main2.*
 
+/**
+ * 参考： https://blog.csdn.net/dodouaj/article/details/52212835
+ */
 class ShowMoreTextActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
