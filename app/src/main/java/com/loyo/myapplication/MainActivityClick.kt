@@ -7,6 +7,7 @@ import com.loyo.myapplication.Retrofit_okhttp_coroutines.RetrofitRxJavaCoroutine
 import com.loyo.myapplication.mutiLanguage.MutiLanguageActivity
 import com.loyo.myapplication.android_q.AndroidQActivity
 import com.loyo.myapplication.banner.BannerActivity
+import com.loyo.myapplication.common_class.TextViewShowMore.ShowMoreTextActivity
 import com.loyo.myapplication.coroutines.CoroutinesActivity
 import com.loyo.myapplication.displayCutout.DisplayCutoutActivity
 import com.loyo.myapplication.easy_permissions.EasyPermissionsActivity
@@ -98,13 +99,13 @@ class MainActivityClick(private val context: Context) {
     fun toBanner() {
         context.startActivity(Intent(context, BannerActivity::class.java))
     }
-    fun toPaging(){
-
-    }
     fun toGestureDetectorCompat(){
         context.startActivity(Intent(context,UseGestureDetectorCompatInActivity::class.java))
     }
     fun toViewDragHelper(){
         context.startActivity(Intent(context,UseViewDragHelperActivity::class.java))
+    }
+    fun toTextShowMoreTextView(){
+        context.startActivity(Intent(context,ShowMoreTextActivity::class.java))
     }
 }

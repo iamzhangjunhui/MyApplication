@@ -58,129 +58,151 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toRecycleView()}"
-                android:text="@string/recyclerview_refresh_item" />
+                android:text="@string/recyclerview_refresh_item"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:onClick="@{()->click.toRoom()}"
-                android:text="@string/use_room" />
+                android:text="@string/use_room"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toMaterialDesignActivity()}"
-                android:text="@string/material_design" />
+                android:text="@string/material_design"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toAssets()}"
-                android:text="@string/use_assets" />
+                android:text="@string/use_assets"
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toWorkManager()}"
-                android:text="@string/use_workmanager" />
+                android:text="@string/use_workmanager"
+                android:textAllCaps="false"/>
 
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toKotlinBy()}"
-                android:text="@string/kotlin_by" />
+                android:text="@string/kotlin_by"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.tokotlinT()}"
-                android:text="@string/kotlin_t" />
+                android:text="@string/kotlin_t"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toRetrofitOkhttpRxjava()}"
-                android:text="@string/retrofit_okhttp_rxjava" />
+                android:text="@string/retrofit_okhttp_rxjava"
+                android:textAllCaps="false"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toRetrofitOkhttpCoroutines()}"
-                android:text="Retrofit + Okhttp +Kotlin协程 框架的学习使用"/>
+                android:text="Retrofit + Okhttp +Kotlin协程 框架的学习使用"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toAndroidQ()}"
-                android:text="@string/android_q" />
+                android:text="@string/android_q"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toEasyPermissions()}"
-                android:text="@string/easypermissions" />
+                android:text="@string/easypermissions"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toCoroutines()}"
-                android:text="@string/kotlin_use" />
+                android:text="@string/kotlin_use"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toMutiLanguage()}"
-                android:text="@string/muti_languege_setting" />
+                android:text="@string/muti_languege_setting"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toStatusBar()}"
-                android:text="@string/status_bar_adapter" />
+                android:text="@string/status_bar_adapter"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toNetStatus()}"
-                android:text="@string/net_status" />
+                android:text="@string/net_status"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toNavigation()}"
-                android:text="@string/jetpack_navigation_activity" />
+                android:text="@string/jetpack_navigation_activity"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toDisplayCutout()}"
-                android:text="@string/display_cutout" />
+                android:text="@string/display_cutout"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{()->click.toBanner()}"
-                android:text="Banner的使用" />
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="paging的学习使用"
-                android:onClick="@{()->click.toPaging()}"/>
+                android:text="Banner的使用"
+                android:textAllCaps="false"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="GestureDetectorCompat的学习使用"
-                android:onClick="@{()->click.toGestureDetectorCompat()}"/>
+                android:onClick="@{()->click.toGestureDetectorCompat()}"
+                android:textAllCaps="false"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="学习ViewDragHelper的使用"
-                android:onClick="@{()->click.toViewDragHelper()}"/>
+                android:onClick="@{()->click.toViewDragHelper()}"
+                android:textAllCaps="false"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView 设置最多显示几行，超出点击展开查看全部"
+                android:onClick="@{()->click.toTextShowMoreTextView()}"
+                android:textAllCaps="false"/>
         </LinearLayout>
 
 
