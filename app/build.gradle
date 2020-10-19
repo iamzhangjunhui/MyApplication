@@ -96,4 +96,5 @@ dependencies {
     if (!TEST_IS_APP.toBoolean()) {
         implementation project(':test')
     }
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
 }
