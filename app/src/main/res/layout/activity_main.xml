@@ -32,6 +32,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="进入邮箱"/>
+            <Button
+                android:id="@+id/btnOp"
+                android:text="android 11新增'数据访问审核'，访问运行时权限时回调"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
             <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/photoView"
                 android:layout_width="200dp"

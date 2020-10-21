@@ -1,9 +1,18 @@
 package com.loyo.myapplication
 
-import android.content.Intent
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
+import android.app.AppOpsManager
+import android.app.AsyncNotedAppOp
+import android.app.SyncNotedAppOp
+import android.content.Context
+import android.content.pm.PackageManager
+import android.location.Location
+import android.location.LocationManager
+import android.os.Build
 import android.os.Bundle
+import android.util.Log
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ObservableField
 import com.loyo.myapplication.databinding.ActivityMainBinding
@@ -11,6 +20,12 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
+    companion object {
+        val TAG = "MainActivity"
+    }
+
+    lateinit var attributionContext: Context
+    lateinit var  locationManager:LocationManager
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main).also {
@@ -39,7 +54,111 @@ class MainActivity : AppCompatActivity() {
             lottie_view.setAnimationFromUrl("https://cqz-1256838880.cos.ap-shanghai.myqcloud.com/bird1.json")
 
         }
+        /**
+         * android  11 (数据访问审核（每次访问运行时权限的时候的回调） https://blog.csdn.net/u014540814/article/details/107178890/)
+         */
+        //创建归因（attribute）
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            attributionContext = createAttributionContext("shareLocation")
+            //监听事件
+            val appOpsCallback = object : AppOpsManager.OnOpNotedCallback() {
+                private fun logPrivateDataAccess(
+                    opCode: String, attributionTag: String, trace: String
+                ) {
+                    Log.i(
+                        TAG, "Private data accessed. " +
+                                "Operation: $opCode\n " +
+                                "Attribution Tag:$attributionTag\nStack Trace:\n$trace"
+                    )
+                }
+
+                override fun onNoted(syncNotedAppOp: SyncNotedAppOp) {
+                    syncNotedAppOp.attributionTag?.let {
+                        logPrivateDataAccess(
+                            syncNotedAppOp.op,
+                            it,
+                            Throwable().stackTrace.toString()
+                        )
+                    }
+                }
+
+                override fun onSelfNoted(syncNotedAppOp: SyncNotedAppOp) {
+                    syncNotedAppOp.attributionTag?.let {
+                        logPrivateDataAccess(
+                            syncNotedAppOp.op,
+                            it,
+                            Throwable().stackTrace.toString()
+                        )
+                    }
+                }
+
+                override fun onAsyncNoted(asyncNotedAppOp: AsyncNotedAppOp) {
+                    asyncNotedAppOp.attributionTag?.let {
+                        logPrivateDataAccess(
+                            asyncNotedAppOp.op,
+                            it,
+                            asyncNotedAppOp.message
+                        )
+                    }
+                }
+            }
+
+            //开启私密数据监听
+            val appOpsManager =
+                getSystemService(AppOpsManager::class.java) as AppOpsManager
+            appOpsManager.setOnOpNotedCallback(mainExecutor, appOpsCallback)
+
+            btnOp.setOnClickListener {
+                getLocation()
+            }
+        }
+
+
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
+    fun getLocation() {
+
+        locationManager = attributionContext.getSystemService(
+            LocationManager::class.java
+        ) as LocationManager
+        if (PackageManager.PERMISSION_GRANTED != checkPermission(
+                android.Manifest.permission.ACCESS_COARSE_LOCATION,
+                android.os.Process.myPid(),
+                android.os.Process.myUid()
+            )
+        ) {
+
+            //activity中申请权限
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(android.Manifest.permission.ACCESS_COARSE_LOCATION),
+                1
+            )
+
+        }else {
+            val location: Location? =
+                locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER)
+            if (location != null) {
+                Log.i(TAG, "${location.latitude}")
+            }
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode==1&&grantResults[0]==PackageManager.PERMISSION_GRANTED){
+            val location: Location? =
+                locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER)
+            if (location != null) {
+                Log.i(TAG, "${location.latitude}")
+            }
+        }
+
+    }
 
 }
