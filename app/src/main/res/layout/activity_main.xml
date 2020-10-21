@@ -43,7 +43,6 @@
                 android:id="@+id/lottie_view"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                app:lottie_fileName="loader.json"
                 app:lottie_loop="true"
                 app:lottie_autoPlay="true"/>
             <!--将item传给子布局-->
