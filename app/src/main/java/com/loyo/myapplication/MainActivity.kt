@@ -4,9 +4,11 @@ import android.app.AppOpsManager
 import android.app.AsyncNotedAppOp
 import android.app.SyncNotedAppOp
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -40,6 +42,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(Intent.ACTION_SENDTO, uri)
                 startActivity(intent)
             }
+            moreText.setShowAllText(false,"sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家sajddhajdaiuewqeqq阿克苏将阿莱克斯家啊哭了的就撒开了多久啊是多久啊大佬开多久啊家")
             /**
              * 以下讲解的是加载lottie动画的几种方式
              */
