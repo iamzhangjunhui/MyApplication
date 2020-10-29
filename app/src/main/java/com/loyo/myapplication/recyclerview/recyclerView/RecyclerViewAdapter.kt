@@ -63,9 +63,6 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.itemRecyclerviewBinding.item = list[position]
         holder.itemRecyclerviewBinding.executePendingBindings()
-        holder.itemView.setOnClickListener {
-            setData(arrayListOf("kaylee", "bobo", "nancy", "aaa", "bbbbb", "RRrr", "7777"))
-        }
     }
 
     class ViewHolder(var itemRecyclerviewBinding: ItemRecyclerviewBinding) :
