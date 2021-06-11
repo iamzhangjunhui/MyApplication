@@ -36,7 +36,8 @@
                 android:id="@+id/btnOp"
                 android:text="android 11新增'数据访问审核'，访问运行时权限时回调"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"/>
             <com.loyo.myapplication.common_class.ShowMoreInfoTextView
                 android:id="@+id/moreText"
                 android:layout_width="match_parent"

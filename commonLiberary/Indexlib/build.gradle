@@ -23,6 +23,6 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
     implementation 'com.github.promeg:tinypinyin:1.0.0' // ~80KB
 }

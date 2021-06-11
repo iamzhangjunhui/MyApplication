@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/button26"
@@ -26,5 +27,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button25" />
+        app:layout_constraintTop_toBottomOf="@+id/button25"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btnConcatAdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="recyclerview的ConcatAdapter的使用"
+        app:layout_constraintTop_toBottomOf="@+id/button26"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAllCaps="false"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

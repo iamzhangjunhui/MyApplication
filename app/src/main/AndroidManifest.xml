@@ -16,10 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/main_theme_light">
+        <activity android:name=".recyclerview.recyclerview_contactadapter.RecyclerViewConcatAdapterActivity"></activity>
         <activity android:name=".shortcuts.TestActivity">
             <intent-filter>
-                <action android:name="com.loyo.myapplication.TEST"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.loyo.myapplication.TEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -81,7 +83,7 @@
         <activity android:name=".materialDesign.snackbar.SnackBarActivity" />
         <activity android:name=".room.RoomActivity" />
         <activity android:name=".recyclerview.recyclerView.UseRecycleViewActivity" />
-        <activity android:name=".common_class.TextViewShowMore.ShowMoreTextActivity"/>
+        <activity android:name=".common_class.TextViewShowMore.ShowMoreTextActivity" />
         <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="stateHidden">
@@ -90,8 +92,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <meta-data android:name="android.app.shortcuts"
-                android:resource="@xml/shortcuts"/>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
         </activity>
     </application>
 

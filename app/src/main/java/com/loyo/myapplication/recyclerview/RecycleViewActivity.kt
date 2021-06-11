@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.loyo.myapplication.R
 import com.loyo.myapplication.recyclerview.recyclerView.UseRecycleViewActivity
 import com.loyo.myapplication.recyclerview.recyclerView_listadapter.RecyclerViewListAdaoterActivity
+import com.loyo.myapplication.recyclerview.recyclerview_contactadapter.RecyclerViewConcatAdapterActivity
 import kotlinx.android.synthetic.main.activity_recycle_view2.*
 
 class RecycleViewActivity : AppCompatActivity() {
@@ -28,6 +29,9 @@ class RecycleViewActivity : AppCompatActivity() {
                     RecyclerViewListAdaoterActivity::class.java
                 )
             )
+        }
+        btnConcatAdp.setOnClickListener {
+            startActivity(Intent(this, RecyclerViewConcatAdapterActivity::class.java))
         }
     }
 }
