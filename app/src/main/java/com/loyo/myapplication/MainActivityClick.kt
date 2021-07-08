@@ -17,6 +17,7 @@ import com.loyo.myapplication.kotlinBy.KotlinByActivity
 import com.loyo.myapplication.kotlinT.KotlinTActivity
 import com.loyo.myapplication.useAssets.UseAssetsActivity
 import com.loyo.myapplication.materialDesign.MaterialDesignActivity
+import com.loyo.myapplication.mvvm.MVVMRecyclerViewActivity
 import com.loyo.myapplication.navigation.NavigationActivity
 import com.loyo.myapplication.netStatus.NetStatusActivity
 import com.loyo.myapplication.recyclerview.RecycleViewActivity
@@ -107,5 +108,8 @@ class MainActivityClick(private val context: Context) {
     }
     fun toTextShowMoreTextView(){
         context.startActivity(Intent(context,ShowMoreTextActivity::class.java))
+    }
+    fun toMVVM(){
+        context.startActivity(Intent(context,MVVMRecyclerViewActivity::class.java))
     }
 }

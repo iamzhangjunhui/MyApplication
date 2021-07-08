@@ -231,6 +231,12 @@
                 android:text="TextView 设置最多显示几行，超出点击展开查看全部"
                 android:onClick="@{()->click.toTextShowMoreTextView()}"
                 android:textAllCaps="false"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MVVM的使用实践"
+                android:onClick="@{()->click.toMVVM()}"
+                android:textAllCaps="false"/>
         </LinearLayout>
 
 
