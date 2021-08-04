@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/main_theme_light">
-        <activity android:name=".mvvm.MVVMRecyclerViewActivity"></activity>
+        <activity android:name=".use_autocompletetextview.UseAutoCompleteTextViewActivity"></activity>
+        <activity android:name=".mvvm.MVVMRecyclerViewActivity" />
         <activity android:name=".recyclerview.recyclerview_contactadapter.RecyclerViewConcatAdapterActivity" />
         <activity android:name=".shortcuts.TestActivity">
             <intent-filter>

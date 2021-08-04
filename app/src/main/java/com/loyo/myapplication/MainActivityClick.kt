@@ -2,7 +2,6 @@ package com.loyo.myapplication
 
 import android.content.Context
 import android.content.Intent
-import androidx.customview.widget.ViewDragHelper
 import com.loyo.myapplication.Retrofit_okhttp_coroutines.RetrofitRxJavaCoroutinesBannerActivity
 import com.loyo.myapplication.mutiLanguage.MutiLanguageActivity
 import com.loyo.myapplication.android_q.AndroidQActivity
@@ -21,10 +20,9 @@ import com.loyo.myapplication.mvvm.MVVMRecyclerViewActivity
 import com.loyo.myapplication.navigation.NavigationActivity
 import com.loyo.myapplication.netStatus.NetStatusActivity
 import com.loyo.myapplication.recyclerview.RecycleViewActivity
-import com.loyo.myapplication.recyclerview.recyclerView_listadapter.RecyclerViewListAdaoterActivity
-import com.loyo.myapplication.recyclerview.recyclerView.UseRecycleViewActivity
 import com.loyo.myapplication.room.RoomActivity
 import com.loyo.myapplication.statusBar.activity.StatusBarActivity
+import com.loyo.myapplication.use_autocompletetextview.UseAutoCompleteTextViewActivity
 import com.loyo.myapplication.viewdraghelper.UseViewDragHelperActivity
 import com.loyo.myapplication.workManager.WorkManagerActivity
 
@@ -111,5 +109,11 @@ class MainActivityClick(private val context: Context) {
     }
     fun toMVVM(){
         context.startActivity(Intent(context,MVVMRecyclerViewActivity::class.java))
+    }
+    fun toAutoCompleteTextView(){
+        context.startActivity(
+            Intent(context,
+                UseAutoCompleteTextViewActivity::class.java)
+        )
     }
 }

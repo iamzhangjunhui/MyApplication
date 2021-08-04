@@ -237,6 +237,13 @@
                 android:text="MVVM的使用实践"
                 android:onClick="@{()->click.toMVVM()}"
                 android:textAllCaps="false"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AutoCompleteTextView  弹出智能提示信息的搜索框"
+                android:textAllCaps="false"
+                android:onClick="@{()->click.toAutoCompleteTextView()}"/>
+
         </LinearLayout>
 
 

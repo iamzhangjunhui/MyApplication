@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".use_autocompletetextview.UseAutoCompleteTextViewActivity">
+<!--completionThreshold 属性设置了一个阀值，规定用户打了多少字符之后才出现自动提示，默认值是2-->
+<AutoCompleteTextView
+    android:id="@+id/autoCompleteTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:completionThreshold="1"/>
+</LinearLayout>
