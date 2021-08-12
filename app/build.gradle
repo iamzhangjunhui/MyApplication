@@ -100,4 +100,5 @@ dependencies {
         implementation project(':test')
     }
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.airbnb.android:lottie:1.0.1'
 }
